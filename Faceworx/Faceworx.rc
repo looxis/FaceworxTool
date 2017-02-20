@@ -1,0 +1,585 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAGNIFIERDLG DIALOGEX 0, 0, 200, 160
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_TOOLWINDOW
+CAPTION "Magnifier"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_EXPORTDLG DIALOGEX 0, 0, 177, 44
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Model detail:",IDC_MODEL_DETAIL_STATIC,0,2,42,8
+    COMBOBOX        IDC_MODEL_DETAIL_COMBO,56,0,121,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Texture size:",IDC_TEXTURE_SIZE_STATIC,0,18,43,8
+    COMBOBOX        IDC_TEXTURE_SIZE_COMBO,56,16,121,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Texture quality:",IDC_TEXTURE_QUALITY_STATIC,0,34,52,8
+    CONTROL         "",IDC_TEXTURE_QUALITY_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOOLTIPS | WS_GROUP | WS_TABSTOP,56,32,121,12
+END
+
+IDD_DIALOG_SUBDIVISION_SETTINGS DIALOGEX 0, 0, 228, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Subdivision settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+    CONTROL         "Sharpen nose",IDC_CHECK_NOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,20,140,10
+    GROUPBOX        "Stage 1",IDC_STATIC,7,7,156,57
+    CONTROL         "Sharpen lips",IDC_CHECK_LIPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,34,140,10
+    CONTROL         "Sharpen eyebrow",IDC_CHECK_EYEBROW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,48,140,10
+END
+
+IDD_DIALOG_3DMODIFICATION_SETTINGS DIALOGEX 0, 0, 193, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "3D Modification Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,24,50,14
+    LTEXT           "Far distance (r1)",IDC_STATIC,7,13,54,8
+    EDITTEXT        IDC_EDIT1,73,7,48,14,ES_AUTOHSCROLL
+    LTEXT           "Near distance (r2)",IDC_STATIC,7,32,59,8
+    EDITTEXT        IDC_EDIT2,73,26,48,14,ES_AUTOHSCROLL
+    LTEXT           "Weight = (r1 - r) / (r1 - r2)",IDC_STATIC,100,66,86,8
+    LTEXT           "Shift",IDC_STATIC,7,51,16,8
+    EDITTEXT        IDC_EDIT3,73,45,48,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_SUBDIVISION_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        VERTGUIDE, 14
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_3DMODIFICATION_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        VERTGUIDE, 73
+        VERTGUIDE, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+        HORZGUIDE, 21
+        HORZGUIDE, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Faceworx"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Faceworx Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\Faceworx.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Faceworx.ico"
+IDR_FaceworxTYPE        ICON                    "res\\FaceworxDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_VIEW_BOX
+    BUTTON      ID_VIEW_FEATURES
+    SEPARATOR
+    BUTTON      ID_VIEW_POINTS_LESS
+    BUTTON      ID_VIEW_POINTS_MORE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Export...",                  ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        POPUP "&Edit in 3D window"
+        BEGIN
+            MENUITEM "&On\tCtrl+M",                 ID_EDIT_EDITIN3DWINDOW
+            MENUITEM "&Fix direction\tCtrl+D",      ID_EDIT_FIXDIRECTION
+            MENUITEM "&Reset modifications",        ID_EDIT_RESETMODIFICATIONS
+            MENUITEM SEPARATOR
+            MENUITEM "&Settings...",                ID_EDIT_SETTINGS
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Box\tCtrl+B",                ID_VIEW_BOX
+        MENUITEM "&Features\tCtrl+F",           ID_VIEW_FEATURES
+        MENUITEM SEPARATOR
+        POPUP "&Points"
+        BEGIN
+            MENUITEM "&All",                        ID_VIEW_POINTS_ALL
+            MENUITEM "&More",                       ID_VIEW_POINTS_MORE
+            MENUITEM "&Less",                       ID_VIEW_POINTS_LESS
+            MENUITEM "&No",                         ID_VIEW_POINTS_NO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Blend &Zone",                 ID_VIEW_BLEND_ZONE
+        MENUITEM SEPARATOR
+        MENUITEM "&Wireframe",                  ID_VIEW_WIREFRAME
+        MENUITEM "So&lid",                      ID_VIEW_SOLID
+        MENUITEM SEPARATOR
+        MENUITEM "Li&ghting",                   ID_VIEW_LIGHTING
+        MENUITEM SEPARATOR
+        MENUITEM "O&rthogonal",                 ID_VIEW_ORTHOGONAL
+        MENUITEM "P&erspective",                ID_VIEW_PERSPECTIVE
+        MENUITEM SEPARATOR
+        POPUP "Model &Detail"
+        BEGIN
+            MENUITEM "&High\tCtrl+3",               ID_VIEW_MODEL_DETAIL_HIGH
+            MENUITEM "&Medium\tCtrl+2",             ID_VIEW_MODEL_DETAIL_MEDIUM
+            MENUITEM "&Low\tCtrl+1",                ID_VIEW_MODEL_DETAIL_LOW
+            MENUITEM SEPARATOR
+            MENUITEM "&Subdivision settings...",    ID_MODELDETAIL_SUBDIVISIONSETTINGS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &In",                    ID_VIEW_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_VIEW_ZOOM_OUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Magnifier",                  ID_VIEW_MAGNIFIER
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Model"
+    BEGIN
+        MENUITEM "Load &Front...\tF3",          ID_MODEL_LOAD_FRONT
+        MENUITEM "Load &Side...\tF4",           ID_MODEL_LOAD_SIDE
+        MENUITEM SEPARATOR
+        MENUITEM "&Left Side",                  ID_MODEL_LEFT_SIDE
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "&Front",                      ID_WINDOW_FRONT
+        MENUITEM "Front &and Side",             ID_WINDOW_FRONT_AND_SIDE
+        MENUITEM "&Side",                       ID_WINDOW_SIDE
+        MENUITEM SEPARATOR
+        MENUITEM "Fro&nt and 3D",               ID_WINDOW_FRONT_AND_3D
+        MENUITEM "Si&de and 3D",                ID_WINDOW_SIDE_AND_3D
+        MENUITEM "3&D",                         ID_WINDOW_3D
+        MENUITEM SEPARATOR
+        MENUITEM "A&ll",                        ID_WINDOW_ALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Faceworx...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "1",            ID_DETAIL_1,            VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_DETAIL_2,            VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_DETAIL_3,            VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_EDITIN3DWINDOW, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_FIXDIRECTION,   VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_REDO,           VIRTKEY, SHIFT, ALT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_MODEL_LOAD_FRONT,    VIRTKEY, NOINVERT
+    VK_F4,          ID_MODEL_LOAD_SIDE,     VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "B",            ID_VIEW_BOX,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_VIEW_FEATURES,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "LOOXIS GmbH"
+            VALUE "FileDescription", "LOOXIS Faceworx"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Faceworx.exe"
+            VALUE "LegalCopyright", "(c) LOOXIS GmbH.  All rights reserved."
+            VALUE "OriginalFilename", "Faceworx.exe"
+            VALUE "ProductName", "Faceworx"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DATA
+//
+
+IDR_MESH                DATA                    "res\\mesh.bin"
+IDR_MODEL               DATA                    "res\\model.bin"
+IDR_ADJS_MED            DATA                    "res\\adjs_med"
+IDR_ADJS_HIGH           DATA                    "res\\adjs_high"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_FRONT_VIEW          "Front View"
+    IDS_SIDE_VIEW           "Side View"
+    IDS_3D_VIEW             "3D View"
+    IDS_EXPORT_FILTER       "Alias Wavefront OBJ Files (*.obj)|*.obj|Any file (*.*)|*.*||"
+    IDS_MODEL_DETAIL_LOW    "Low"
+    IDS_MODEL_DETAIL_MEDIUM "Medium"
+    IDS_MODEL_DETAIL_HIGH   "High"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Faceworx\n\nFaceworx\nFaceworx Files (*.fwx)\n.fwx\nFaceworx.Document\nFaceworx.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Faceworx"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_LIGHTING        "Turn on or off lighting for 3D model\nToggle lighting for 3D model"
+    ID_VIEW_PERSPECTIVE     "Turn on perspective projection or orthogonal otherwise for 3D model\nToggle perspective for 3D model"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_EDITIN3DWINDOW  "Turns editing in 3D window on or off\nTurns editing in 3D window on or off"
+    ID_EDIT_FIXDIRECTION    "Fixes direction of pushing/polling in 3D window\nFixes direction of pushing/polling in 3D window"
+    ID_EDIT_RESETMODIFICATIONS 
+                            "Resets all modifications made by editing in 3D window\nReset all modifications made by editing in 3D window"
+    ID_EDIT_SETTINGS        "Change settings for editing in 3D window\nChange settings for editing in 3D window"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\Faceworx.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
